@@ -1,0 +1,110 @@
+ERROR - 2021-12-21 01:09:37 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-12-21 01:09:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\Users\acer\Downloads\backend\backend\transline\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\acer\Downloads\backend\backend\transline\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\acer\Downloads\backend\backend\transline\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\acer\Downloads\backend\backend\transline\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#5 C:\Users\acer\Downloads\backend\backend\transline\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#6 C:\Users\acer\Downloads\backend\backend\transline\vendor\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#7 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(802): Myth\Auth\Controllers\AuthController->attemptLogin()
+#8 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#9 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\acer\Downloads\backend\backend\transline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\acer\Downloads\backend\backend\transline\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\acer\\D...')
+#12 {main}
+CRITICAL - 2021-12-21 01:09:37 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\Users\acer\Downloads\backend\backend\transline\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\Users\\acer\\D...', 96, Array)
+#1 C:\Users\acer\Downloads\backend\backend\transline\app\Views\errors\html\error_exception.php(96): print_r(Object(Myth\Auth\Controllers\AuthController), true)
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\Debug\Exceptions.php(235): include('C:\\Users\\acer\\D...')
+#3 C:\Users\acer\Downloads\backend\backend\transline\system\Debug\Exceptions.php(132): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-21 01:51:44 --> Too few arguments to function App\Controllers\Ticket::index(), 0 passed in C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(802): App\Controllers\Ticket->index()
+#1 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\acer\Downloads\backend\backend\transline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\acer\Downloads\backend\backend\transline\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\acer\\D...')
+#5 {main}
+CRITICAL - 2021-12-21 02:02:36 --> Too few arguments to function App\Controllers\Ticket::index(), 0 passed in C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(802): App\Controllers\Ticket->index()
+#1 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\acer\Downloads\backend\backend\transline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\acer\Downloads\backend\backend\transline\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\acer\\D...')
+#5 {main}
+CRITICAL - 2021-12-21 02:02:52 --> Too few arguments to function App\Controllers\Ticket::index(), 0 passed in C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(802): App\Controllers\Ticket->index()
+#1 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\acer\Downloads\backend\backend\transline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\acer\Downloads\backend\backend\transline\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\acer\\D...')
+#5 {main}
+CRITICAL - 2021-12-21 02:19:58 --> Too few arguments to function App\Controllers\Ticket::index(), 0 passed in C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(802): App\Controllers\Ticket->index()
+#1 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\acer\Downloads\backend\backend\transline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\acer\Downloads\backend\backend\transline\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\acer\\D...')
+#5 {main}
+CRITICAL - 2021-12-21 02:58:33 --> Undefined property: stdClass::$id_ticket
+#0 C:\Users\acer\Downloads\backend\backend\transline\app\Views\ticket\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\acer\\D...', 39, Array)
+#1 C:\Users\acer\Downloads\backend\backend\transline\system\View\View.php(214): include('C:\\Users\\acer\\D...')
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\acer\Downloads\backend\backend\transline\system\Common.php(1092): CodeIgniter\View\View->render('ticket/index', Array, true)
+#4 C:\Users\acer\Downloads\backend\backend\transline\app\Controllers\Ticket.php(35): view('ticket/index', Array)
+#5 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(802): App\Controllers\Ticket->index()
+#6 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\acer\Downloads\backend\backend\transline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\acer\Downloads\backend\backend\transline\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\acer\\D...')
+#10 {main}
+CRITICAL - 2021-12-21 02:58:55 --> Undefined property: stdClass::$kode_kereta
+#0 C:\Users\acer\Downloads\backend\backend\transline\app\Views\ticket\index.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\acer\\D...', 44, Array)
+#1 C:\Users\acer\Downloads\backend\backend\transline\system\View\View.php(214): include('C:\\Users\\acer\\D...')
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\acer\Downloads\backend\backend\transline\system\Common.php(1092): CodeIgniter\View\View->render('ticket/index', Array, true)
+#4 C:\Users\acer\Downloads\backend\backend\transline\app\Controllers\Ticket.php(35): view('ticket/index', Array)
+#5 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(802): App\Controllers\Ticket->index()
+#6 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\acer\Downloads\backend\backend\transline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\acer\Downloads\backend\backend\transline\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\acer\\D...')
+#10 {main}
+CRITICAL - 2021-12-21 02:59:14 --> Undefined variable: k
+#0 C:\Users\acer\Downloads\backend\backend\transline\app\Views\ticket\index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\acer\\D...', 48, Array)
+#1 C:\Users\acer\Downloads\backend\backend\transline\system\View\View.php(214): include('C:\\Users\\acer\\D...')
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\acer\Downloads\backend\backend\transline\system\Common.php(1092): CodeIgniter\View\View->render('ticket/index', Array, true)
+#4 C:\Users\acer\Downloads\backend\backend\transline\app\Controllers\Ticket.php(35): view('ticket/index', Array)
+#5 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(802): App\Controllers\Ticket->index()
+#6 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\acer\Downloads\backend\backend\transline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\acer\Downloads\backend\backend\transline\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\acer\\D...')
+#10 {main}
+ERROR - 2021-12-21 03:02:45 --> Unknown column 'kode_ticket' in 'where clause'
+CRITICAL - 2021-12-21 03:02:45 --> Unknown column 'kode_ticket' in 'where clause'
+#0 C:\Users\acer\Downloads\backend\backend\transline\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\Users\acer\Downloads\backend\backend\transline\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\Users\acer\Downloads\backend\backend\transline\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\Users\acer\Downloads\backend\backend\transline\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\acer\Downloads\backend\backend\transline\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\acer\Downloads\backend\backend\transline\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('3', 'kode_ticket', Array, NULL)
+#6 C:\Users\acer\Downloads\backend\backend\transline\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('kode_ticket', 'kode_ticket', '3', Array, Array)
+#7 C:\Users\acer\Downloads\backend\backend\transline\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\acer\Downloads\backend\backend\transline\app\Controllers\Ticket.php(70): CodeIgniter\Controller->validate(Array)
+#9 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(802): App\Controllers\Ticket->save()
+#10 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#11 C:\Users\acer\Downloads\backend\backend\transline\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\acer\Downloads\backend\backend\transline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\acer\Downloads\backend\backend\transline\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\acer\\D...')
+#14 {main}

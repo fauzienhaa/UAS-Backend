@@ -1,0 +1,12 @@
+CRITICAL - 2021-12-17 03:39:02 --> Trying to access array offset on value of type null
+#0 D:\Z-CI4 - coba\app\Views\tiket\detail.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\Z-CI4 - coba...', 31)
+#1 D:\Z-CI4 - coba\system\View\View.php(214): include('D:\\Z-CI4 - coba...')
+#2 D:\Z-CI4 - coba\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\Z-CI4 - coba\system\Common.php(1092): CodeIgniter\View\View->render('tiket/detail', Array, true)
+#4 D:\Z-CI4 - coba\app\Controllers\Tiket.php(42): view('tiket/detail', Array)
+#5 D:\Z-CI4 - coba\system\CodeIgniter.php(802): App\Controllers\Tiket->detail('delete', '6')
+#6 D:\Z-CI4 - coba\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tiket))
+#7 D:\Z-CI4 - coba\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Z-CI4 - coba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Z-CI4 - coba\system\Commands\Server\rewrite.php(43): require_once('D:\\Z-CI4 - coba...')
+#10 {main}

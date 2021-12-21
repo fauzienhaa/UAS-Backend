@@ -1,0 +1,22 @@
+CRITICAL - 2021-12-10 08:46:41 --> Invalid file: pemesanan/create.php
+#0 D:\Z-CI4 - coba\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pemesanan/creat...')
+#1 D:\Z-CI4 - coba\system\Common.php(1092): CodeIgniter\View\View->render('pemesanan/creat...', Array, true)
+#2 D:\Z-CI4 - coba\app\Controllers\Pemesanan.php(51): view('pemesanan/creat...', Array)
+#3 D:\Z-CI4 - coba\system\CodeIgniter.php(802): App\Controllers\Pemesanan->create()
+#4 D:\Z-CI4 - coba\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemesanan))
+#5 D:\Z-CI4 - coba\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Z-CI4 - coba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\Z-CI4 - coba\system\Commands\Server\rewrite.php(43): require_once('D:\\Z-CI4 - coba...')
+#8 {main}
+CRITICAL - 2021-12-10 08:53:31 --> Undefined variable $komik
+#0 D:\Z-CI4 - coba\app\Views\pemesanan\index.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\Z-CI4 - coba...', 32)
+#1 D:\Z-CI4 - coba\system\View\View.php(214): include('D:\\Z-CI4 - coba...')
+#2 D:\Z-CI4 - coba\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\Z-CI4 - coba\system\Common.php(1092): CodeIgniter\View\View->render('pemesanan/index', Array, true)
+#4 D:\Z-CI4 - coba\app\Controllers\Pemesanan.php(23): view('pemesanan/index', Array)
+#5 D:\Z-CI4 - coba\system\CodeIgniter.php(802): App\Controllers\Pemesanan->index()
+#6 D:\Z-CI4 - coba\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemesanan))
+#7 D:\Z-CI4 - coba\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Z-CI4 - coba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Z-CI4 - coba\system\Commands\Server\rewrite.php(43): require_once('D:\\Z-CI4 - coba...')
+#10 {main}
